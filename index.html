@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone-1.1.0.js"></script>
+    <script src="js/backbone.marionette-1.5.1.js"></script>
+    <script src="app.js"></script>
+    <script src="models.js"></script>
+    <script src="views.js"></script>
+    <script src="donkey.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <div id="title_navbar">
+    </div>
+    <div id="content">
+    </div>
+
+    <script type="text/template" id="tpl_title_nav">
+        <div class="header">The Noble Donkey</div> <button>Hee Haw!</button>
+    </script>
+
+    <script type="text/template" id="tpl_main_layout">
+        <div class="r_donkey_list">
+            <!-- tpl_donkey_list -->
+        </div>
+    </script>
+    <script type="text/template" id="tpl_donkey_list">
+        <thead>
+            <th class="image"></th>
+            <th class="name">Name</th>
+            <th class="breed">Breed</th>
+            <th class="habitat">Habitat</th>
+        </thead>
+        <tbody class="donkey_rows">
+
+        </tbody>
+
+    </script>
+    <script type="text/template" id="tpl_donkey_item">
+        <td><img src="<%= image_url %>"/></td>
+        <td><input class="name" type="text" value="<%= name %>"/></td>
+        <td><input class="breed" type="text" value="<%= breed %>"/></td>
+        <td><input class="breed" type="text" value="<%= habitat %>"/></td>
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+#title_navbar {
+    height: 80px;
+    padding: 16px;
+}
+
+#title_navbar .header {
+    width: 400px;
+    font-size: 36px;
+    display: inline-block;
+}
+
+#title_navbar button {
+    float: right;
+    padding: 8px;
+    font-size: 18px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+}
+
+.r_donkey_list table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+td:first-child {
+    width: 10%;
+}
+
+td:not:first-child{
+    width: 22.5%;
+}
+
+td img {
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td input {
+    padding: 8px;
+    font-size: 16px;
+    width: 220px;
+}
