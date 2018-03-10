@@ -12,6 +12,7 @@
     <script src="models.js"></script>
     <script src="views.js"></script>
     <script src="donkey.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -27,7 +28,10 @@
 
     <script type="text/template" id="tpl_main_layout">
         <div class="r_donkey_intro">
-
+            <!-- tpl_donkey_intro -->
+        </div>
+        <div class="r_update_tracker">
+            <!-- tpl_update_tracker -->
         </div>
         <div class="r_donkey_list">
             <!-- tpl_donkey_list -->
@@ -40,6 +44,11 @@
         and between the 185 different breeds of Donkeys in the world. Here will study some of the breed from North
         America and Europe and observe how they interact.
     </script>
+
+    <script type="text/template" id="tpl_hee_haw">
+        Hee Haw!
+    </script>
+
     <script type="text/template" id="tpl_donkey_list">
         <thead>
             <th class="image"></th>
@@ -56,8 +65,12 @@
         <td><img src="<%= image_url %>"/></td>
         <td><input class="name" type="text" value="<%= name %>"/></td>
         <td><input class="breed" type="text" value="<%= breed %>"/></td>
-        <td><input class="breed" type="text" value="<%= habitat %>"/></td>
+        <td><input class="habitat" type="text" value="<%= habitat %>"/></td>
 
+    </script>
+
+    <script type="text/template" id="tpl_update_item">
+        <%= attribute %> updated to "<%= value %>"
     </script>
 
 </body>

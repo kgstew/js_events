@@ -3,11 +3,13 @@ body {
     margin: 0 auto;
     background-color: aliceblue;
     font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #title_navbar {
     height: 40px;
     padding: 32px 32px  0 32px;
+    margin-bottom: 16px;
 }
 
 #title_navbar .header {
@@ -30,11 +32,39 @@ body {
 }
 
 .r_donkey_intro {
-    padding: 16px 0;
     line-height: 24px;
-    border-bottom: 2px solid #000;
-    margin-bottom: 32px;
     text-align: justify;
+    margin-bottom: 8px;
+}
+
+.r_update_tracker {
+    height: 40px;
+    background-color: darkblue;
+    color: ivory;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.r_update_tracker ul {
+	list-style: none;
+    margin: 6px 0;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.r_update_tracker ul li {
+    display: inline;
+    padding: 0 8px;
+}
+
+.r_update_tracker ul li:not(:first-child) {
+    border-left: 2px solid ivory;
+}
+
+.hee_haw {
+    font-size: 200px;
+    margin: 200px auto;
+    width: 900px;
 }
 
 .r_donkey_list table {
@@ -44,6 +74,19 @@ body {
 th {
     text-align: left;
     font-size: 24px;
+}
+
+tr {
+  background-color:aliceblue;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -ms-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+}
+
+tr.changing {
+  background-color:red;
 }
 
 td:first-child {
