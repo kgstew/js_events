@@ -17,11 +17,11 @@ $f.application.Router = Backbone.Marionette.AppRouter.extend({
     generate_donkey_collection: function() {
 
         var collection = new $f.collections.Donkeys([
-            {id: 0, name:'Jack', breed: 'American Mammoth Jack', habitat: 'USA', image_url: 'images/american_mammoth_jack.jpg'},
-            {id: 1, name:'Gillian', breed: 'Ane wallon', habitat: 'Belgium', image_url: 'images/ane_wallon.jpg'},
-            {id: 2, name:'Dani', breed: 'Andalusian', habitat: 'Spain', image_url: 'images/andalusian.jpg'},
-            {id: 3, name:'Bettina', breed: 'Asinara', habitat: 'Italy', image_url: 'images/asinara.jpg'},
-            {id: 4, name:'Jeffery', breed: 'Poitou', habitat: 'France', image_url: 'images/poitou.jpg'}],
+            {id: 0, order: 0, name:'Jack', breed: 'American Mammoth Jack', habitat: 'USA', image_url: 'images/american_mammoth_jack.jpg'},
+            {id: 1, order: 1, name:'Gillian', breed: 'Ane wallon', habitat: 'Belgium', image_url: 'images/ane_wallon.jpg'},
+            {id: 2, order: 2, name:'Dani', breed: 'Andalusian', habitat: 'Spain', image_url: 'images/andalusian.jpg'},
+            {id: 3, order: 3, name:'Bettina', breed: 'Asinara', habitat: 'Italy', image_url: 'images/asinara.jpg'},
+            {id: 4, order: 4, name:'Jeffery', breed: 'Poitou', habitat: 'France', image_url: 'images/poitou.jpg'}],
         {});
 
         return collection;

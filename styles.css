@@ -1,6 +1,13 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    font-size: 16px;
+}
+
 #title_navbar {
-    height: 80px;
-    padding: 16px;
+    height: 40px;
+    padding: 32px 32px  0 32px;
 }
 
 #title_navbar .header {
@@ -18,16 +25,30 @@
     border-radius: 13px;
 }
 
+#content {
+    padding: 0 32px;
+}
+
+.r_donkey_intro {
+    padding: 16px 0;
+    line-height: 24px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
 .r_donkey_list table {
     width: 100%;
 }
 
 th {
     text-align: left;
+    font-size: 24px;
 }
 
 td:first-child {
     width: 10%;
+    padding-right: 16px;
 }
 
 td:not:first-child{
@@ -43,6 +64,5 @@ td img {
 
 td input {
     padding: 8px;
-    font-size: 16px;
-    width: 220px;
+    width: 90%;
 }

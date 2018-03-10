@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Adventures in Javascript Events with Backbone and Marionette</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="js/underscore.js"></script>
     <script src="js/backbone-1.1.0.js"></script>
@@ -15,19 +16,29 @@
 </head>
 <body>
 
-    <div id="title_navbar">
-    </div>
-    <div id="content">
-    </div>
+    <div id="title_navbar"></div>
+    <div id="content"></div>
+
+    <!-- Templates Below Here -->
 
     <script type="text/template" id="tpl_title_nav">
         <div class="header">The Noble Donkey</div> <button>Hee Haw!</button>
     </script>
 
     <script type="text/template" id="tpl_main_layout">
+        <div class="r_donkey_intro">
+
+        </div>
         <div class="r_donkey_list">
             <!-- tpl_donkey_list -->
         </div>
+    </script>
+    <script type="text/template" id="tpl_donkey_intro">
+        The donkey is a noble creature. Servant of man and observer of the art of work through the generations. As a pack
+        animal the donkey has carried human development on its back. But little of known of the social rituals and
+        domestic life of the donkey. Researched have struggled for years to understand the complex interaction within
+        and between the 185 different breeds of Donkeys in the world. Here will study some of the breed from North
+        America and Europe and observe how they interact.
     </script>
     <script type="text/template" id="tpl_donkey_list">
         <thead>

@@ -9,7 +9,6 @@ $f.models.Donkey = Backbone.Model.extend({
 });
 
 $f.collections.Donkeys = Backbone.Collection.extend({
-
     initialize: function(models, options) {
         options = options || {};
         $.extend(this, options);
